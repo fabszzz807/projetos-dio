@@ -2,12 +2,10 @@
 email = input().strip()
 
 # TODO: Verifique as regras do e-mail:
-if "@gmail.com" in email or "@outlook.com" in email:
-  print("E-mail válido")
-elif " " in email:
+if " " in email:
   print("E-mail inválido")
 elif email.startswith("@"):
   print("E-mail inválido")
-else:
+elif "@gmail.com" in email or "@outlook.com" in email:
   print("E-mail válido")
   
