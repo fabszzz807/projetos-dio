@@ -5,12 +5,12 @@ eventos = {}
 n = int(input().strip())
 
 # TODO: Crie um loop para armazenar participantes e seus temas:
-for i in range(n):
+for _ in range(n):
   linha = input().strip().title()
 
   posicao_espaco = linha.rfind(" ")
 
-  participantes = linha[:posicao_espaco - 1]
+  participantes = linha[:posicao_espaco]
   tema = linha[posicao_espaco + 1:]
 
   if tema not in eventos:

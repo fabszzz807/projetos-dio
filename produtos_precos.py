@@ -22,9 +22,7 @@ for _ in range(n):
 
 # TODO: Exiba os itens e o total da compra
 
-print(carrinho)
-print(carrinho[0][0])
-
 for indice, i in enumerate(carrinho):
     print(f"{carrinho[indice][0]}: R${carrinho[indice][1]:.2f}")
-    #print(f"{carrinho[indice][i]}: R${preco:.2f}")
+
+print(f"Total: R${total:.2f}")
