@@ -18,18 +18,23 @@ class Bicicleta:
     def correr(self):
         print("correndo")
 
+
 cor = input("Informe a cor da bicicleta: ").strip().title()
 modelo = input("Informe o modelo da bicicleta: ").strip().title()
 ano = input("Informe o ano da bicicleta: ").strip().title()
 valor = float(input("Informe o valor da bicicleta: ").strip().title())
 
+
 bicicleta_1 = Bicicleta("Amarelo", "Bianchi", "2015", 2000)
 bicicleta_2 = Bicicleta("Azul", "BMX", "2024", 1500)
 bicicleta_3 = Bicicleta(cor, modelo, ano, valor)
 
+
 def registrar_bicleta(bicicleta):
-    print(f"Cor: {bicicleta.cor}\nModelo: {bicicleta.modelo}\nAno: {bicicleta.ano}\nValor: R${bicicleta.valor:.2f}\n")
+    print(f"\nCor: {bicicleta.cor}\nModelo: {bicicleta.modelo}\nAno: {bicicleta.ano}\nValor: R${bicicleta.valor:.2f}")
 
 registrar_bicleta(bicicleta_1)
 registrar_bicleta(bicicleta_2)
 registrar_bicleta(bicicleta_3)
+
+bicicleta_3.correr()
