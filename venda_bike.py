@@ -18,6 +18,9 @@ class Bicicleta:
     def correr(self):
         print("correndo")
 
+    def __str__(self):
+        return f"{self.__class__.__name__}: {', '.join([f'{chave}: {valor}' for chave, valor in self.__dict__.items()])}"
+
 
 cor = input("Informe a cor da bicicleta: ").strip().title()
 modelo = input("Informe o modelo da bicicleta: ").strip().title()
